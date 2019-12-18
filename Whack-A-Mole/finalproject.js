@@ -1,12 +1,15 @@
 
-var random = Math.random();
-var score = 0 + a;
-var a = 
+var score = 0 
 
 $('.mole').click(
     function(){
-        $(this).slideUp(); 
+        $(this).slideUp();
+        score++;
+        $("#score").text(score)
+        $()
+    
     }
+    
 );
 $('#start').click(
     function(){
@@ -14,7 +17,11 @@ $('#start').click(
         ('.mole').slideDown(500);
   })}
 );
-
+$('#slideUp').click(
+        function() {
+        $('.mole').slideDown();
+  }
+);
 
 
 
