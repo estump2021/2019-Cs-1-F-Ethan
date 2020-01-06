@@ -12,7 +12,7 @@ $('.mole').click(
     
 );
 $('#start').click(
-    function(){
+    function () {
         $('.mole').slideUp(function() {
         ('.mole').slideDown(500);
   })}
@@ -22,7 +22,6 @@ $('#slideUp').click(
         $('.mole').slideDown();
   }
 );
-
 
 
 
