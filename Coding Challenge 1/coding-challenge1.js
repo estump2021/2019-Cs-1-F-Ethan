@@ -23,7 +23,11 @@ function divide(param1, param2){
 var a = 3;
 var b = 5;
 
+
 console.log(a + "+" + b + " = " + add(a,b));
+console.log(a + "-" + b + " = " + subtract(a,b));
+console.log(a + "*" + b + " = " + multiply(a,b));
+console.log(a + "/" + b + " = " + divide(a,b));
 
 /*
 * Write three other functions for multiplying, subtracting, and dividing and
@@ -52,14 +56,14 @@ console.log(a + "+" + b + " = " + add(a,b));
 * Write a function that takes two numbers, a min and a high, and outputs the numbers 
 * between the min and high. The function declaration has been done for you.
 */
-
  
 
 function showNumbers(min, high){
-
+    for(var i=min; i<high; i++){
+        console.log(i);
+    }
 }
-
-
+showNumbers(0,10)
 // CHALLENGE 3
 
 /*
@@ -70,3 +74,10 @@ function showNumbers(min, high){
 *
 * should display 3,7,11
 */
+
+function showNumbers(min, high, countyBy){
+    for(var i=min; i<high; i+=countBy){
+        console.log(i);
+    }
+}
+showNumbers(3,12,4)
